@@ -80,8 +80,6 @@ const getBookData = async (ISBN) => {
     author,
     publish,
   };
-
-  //   console.log(pretty($.html()));
 };
 
 const port = process.env.PORT || 8080;
