@@ -8,6 +8,13 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+
+app.get("/test2", (req, res) => {
+  res.json({
+    message: "test work 2!!",
+  });
+});
+
 app.get("/test", (req, res) => {
   res.json({
     message: "test work!!",
